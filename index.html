@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <i class="fa fa-bars"></i>
+        <h1>TodoList</h1>
+      </header>
+      <section class="forms-container">
+        <form class="form-items" id="book-form">
+          <div class="form-item">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="title" />
+          </div>
+          <div class="form-item">
+            <label for="userid">UserId</label>
+            <input type="text" id="userid" placeholder="UserId" />
+          </div>
+          <div class="form-item">
+            <label for="bookid">Completed</label>
+            <input type="text" id="completed" placeholder="Completed" />
+          </div>
+          <div class="form-item">
+            <input type="submit" id="submit" value="submit" />
+          </div>
+        </form>
+      </section>
+      <section class="table-container">
+        <table class="list">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Completed</th>
+              <th>Del</th>
+            </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
